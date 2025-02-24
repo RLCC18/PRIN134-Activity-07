@@ -54,7 +54,7 @@ function tieBreaker(players, attempts) {
 function determineChampion(players) {
     let rankedPlayers = rankPlayers(players);
 
-    // Check if the top two players have the same score
+  
     if (rankedPlayers.length > 1 && rankedPlayers[0].score === rankedPlayers[1].score) {
         let tiedPlayers = rankedPlayers.filter(p => p.score === rankedPlayers[0].score);
 
@@ -65,7 +65,7 @@ function determineChampion(players) {
         }
     }
 
-    // If no tie, declare the champion
+  
     console.log(`\n 🏆 The champion is ${rankedPlayers[0].name} with ${rankedPlayers[0].score} points!\n`);
 }
 
